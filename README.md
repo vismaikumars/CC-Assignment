@@ -1,4 +1,4 @@
-# Academic Chatbot
+# Academic Bot
 
 This is an academic chatbot powered by OpenAI's GPT-3.5 model. It allows users to have interactive conversations with the chatbot on various academic topics.
 
@@ -78,5 +78,47 @@ The code also includes functionality for speech synthesis using Azure Cognitive 
 
 - This chatbot is powered by the GPT-3.5 model from OpenAI.
 - The speech recognition and synthesis capabilities are provided by Azure Cognitive Services Speech SDK.
+
+
+#
+#
+
+# Translation Automation with AWS and Google Cloud
+
+This repository contains Python scripts for automating text translation using AWS Translate and Google Cloud Translate services. The scripts are intended to be executed either as standalone Python programs or as AWS Lambda functions. The repository includes two separate scripts, each utilizing a different translation service.
+
+## AWS Translation
+
+The `translateAWS.py` script demonstrates how to translate text stored in an S3 object using the AWS Translate service. The script utilizes the Boto3 library to interact with AWS services, specifically Amazon S3 and Amazon Translate. The translated text is saved back to the S3 bucket for further use.
+
+### Prerequisites
+
+- Python 3.x
+- Boto3 library
+- AWS CLI configured with appropriate access and secret keys
+
+### Usage
+
+1. Configure AWS CLI with your AWS access and secret keys.
+2. Modify the `lambda_handler` function in `aws_translation.py` to customize the translation source and target languages.
+3. Execute the script either as a standalone Python program or deploy it as an AWS Lambda function triggered by S3 events.
+
+## Google Cloud Translation
+
+The `translateGCP.py` script demonstrates how to translate text extracted from a PDF file using the Google Cloud Translate API. The script uses the `translate_v2` library from the `google.cloud` package to interact with the Google Cloud Translation service. The translated text is saved to an output file.
+
+### Prerequisites
+
+- Python 3.x
+- `google-cloud-translate` library
+- Google Cloud Translation API credentials
+
+### Usage
+
+1. Install the `google-cloud-translate` library using pip: `pip install google-cloud-translate`.
+2. Obtain the Google Cloud Translation API credentials file in JSON format.
+3. Modify the `pdf_filename`, `target_language`, and `output_filename` variables in `google_cloud_translation.py` to match your requirements.
+4. Execute the script as a standalone Python program.
+
 
 
