@@ -121,4 +121,41 @@ The `translateGCP.py` script demonstrates how to translate text extracted from a
 4. Execute the script as a standalone Python program.
 
 
+#
+#
+
+# NLP and Computer Vision 
+
+A Python code that combines Natural Language Processing (NLP) and Computer Vision (CV) using Azure Cognitive Services APIs. This demonstrates how to analyze text sentiment and perform image analysis using Azure Text Analytics and Computer Vision services.
+
+## Prerequisites
+
+- Python 3.x installed on your machine
+- Azure subscription with provisioned Cognitive Services resources (Text Analytics and Computer Vision)
+- Subscription key and endpoint for Text Analytics and Computer Vision services
+
+
+## Configuration
+
+1. Open the 'textAndImage.py` file in a text editor or integrated development environment (IDE).
+
+2. Replace the placeholder values `<YOUR_SUBSCRIPTION_KEY>` and `<YOUR_ENDPOINT>` with your actual subscription key and endpoint for both Text Analytics and Computer Vision services.
+
+## Usage
+
+1. Run the Python script by executing the following command in the terminal or command prompt: `python textAndImage.py`
+   
+2. The script will call the `analyze_text_sentiment` function with an example text and print the sentiment analysis results.
+
+3. It will also call the `analyze_image_objects` function with an example image URL and print the detected objects and tags.
+
+4. Review the output in the terminal or command prompt to see the results of the NLP and CV analysis.
+
+
+## Disclaimer
+
+Please note that the code provided in this repository is intended for example purposes only. It may require additional error handling, input validation, or modifications to suit your specific use case.
+
+
+
 
