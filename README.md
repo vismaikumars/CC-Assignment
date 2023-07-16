@@ -143,7 +143,10 @@ A Python code that combines Natural Language Processing (NLP) and Computer Visio
 
 ## Usage
 
-1. Run the Python script by executing the following command in the terminal or command prompt: `python textAndImage.py`
+1. Run the Python script by executing the following command in the terminal or command prompt:
+```
+python textAndImage.py
+```
    
 2. The script will call the `analyze_text_sentiment` function with an example text and print the sentiment analysis results.
 
